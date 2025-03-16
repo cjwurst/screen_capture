@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac69fac2e362195408024d714c2975ac, type: 3}
+  m_Name: Lattice
+  m_EditorClassIdentifier: 
+  rules:
+  - input: 120
+    outputs:
+    - weight: 1
+      output: '[+x--x]-x++x-c'
+  - input: 45
+    outputs:
+    - weight: 1
+      output: --
+  - input: 43
+    outputs:
+    - weight: 1
+      output: ++
+  drawInstructions:
+  - input: 120
+    outputs:
+    - weight: 1
+      output: 0
+  - input: 45
+    outputs:
+    - weight: 1
+      output: 2
+  - input: 43
+    outputs:
+    - weight: 1
+      output: 1
+  - input: 91
+    outputs:
+    - weight: 1
+      output: 4
+  - input: 93
+    outputs:
+    - weight: 1
+      output: 5
+  - input: 47
+    outputs:
+    - weight: 1
+      output: 3
+  - input: 99
+    outputs:
+    - weight: 1
+      output: 6
+  iterationCount: 6
+  iterationTime: 2
+  drawTime: 0.01
+  turnAngle: 90
+  drawDistance: 0.3
+  axiom: x/
